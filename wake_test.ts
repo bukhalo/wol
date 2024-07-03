@@ -1,4 +1,4 @@
-import "./deps_test.ts";
+import "jsr:@std/dotenv@0.224.2/load";
 import { wake } from "./wake.ts";
 
 Deno.test("wake", () => {

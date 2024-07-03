@@ -1,2 +1,2 @@
-export { magickPacket } from "./magic_packet.ts";
+export { magicPacket } from "./magic_packet.ts";
 export { wake } from "./wake.ts";

@@ -1,7 +1,7 @@
-import { magickPacket } from "./magic_packet.ts";
+import { magicPacket } from "./magic_packet.ts";
 
 /**
- * Send Wake on LAN (WoL)	frame over a local Ethernet network
+ * Send Wake on LAN (WoL) frame over a local Ethernet network
  * @param macAddress target device MAC address
  */
 export const wake = async (macAddress: string): Promise<void> => {
@@ -11,7 +11,7 @@ export const wake = async (macAddress: string): Promise<void> => {
     transport: "udp",
   });
 
-  await conn.send(magickPacket(macAddress), {
+  await conn.send(magicPacket(macAddress), {
     transport: "udp",
     hostname: "255.255.255.255",
     port: 9,

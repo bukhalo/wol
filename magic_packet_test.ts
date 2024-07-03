@@ -1,5 +1,6 @@
-import { assertEquals } from "./deps_test.ts";
-import { magickPacket } from "./magic_packet.ts";
+import "jsr:@std/dotenv@0.224.2/load";
+import { assertEquals } from "jsr:@std/assert@0.226.0";
+import { magicPacket } from "./magic_packet.ts";
 
 Deno.test("magicPacket", () => {
   const testMacAddress = "77:e0:e3:92:45:67";
@@ -24,5 +25,5 @@ Deno.test("magicPacket", () => {
     119, 224, 227, 146, 69, 103,
   ]);
 
-  assertEquals(magickPacket(testMacAddress), referenceMagicPacket);
+  assertEquals(magicPacket(testMacAddress), referenceMagicPacket);
 });

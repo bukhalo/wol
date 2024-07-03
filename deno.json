@@ -1,0 +1,13 @@
+{
+  "name": "@bukhalo/wol",
+  "version": "2.0.0",
+  "exports": "./mod.ts",
+  "tasks": {
+    "lint": "deno fmt",
+    "test": "deno test --allow-read --allow-env --allow-net --unstable-net",
+    "publish": "deno task lint && deno publish"
+  },
+  "imports": {
+    "@std/bytes": "jsr:@std/bytes@^1.0.1"
+  }
+}
