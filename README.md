@@ -13,13 +13,13 @@ deno add @bukhalo/wol
 Or add package without install step:
 
 ```typescript
-import { wol } from "jsr:@bukhalo/wol";
+import { wake } from "jsr:@bukhalo/wol";
 ```
 
 Execute `wake` function from package:
 
 ```typescript
-import { wol } from "@bukhalo/wol";
+import { wake } from "@bukhalo/wol";
 
 wake("00:00:00:00:00:00");
 ```

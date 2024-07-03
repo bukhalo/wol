@@ -1,6 +1,6 @@
 {
   "name": "@bukhalo/wol",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "exports": "./mod.ts",
   "tasks": {
     "lint": "deno fmt",
@@ -9,5 +9,8 @@
   },
   "imports": {
     "@std/bytes": "jsr:@std/bytes@^1.0.1"
+  },
+  "publish": {
+    "exclude": [".github"]
   }
 }
