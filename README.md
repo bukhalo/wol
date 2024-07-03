@@ -24,10 +24,11 @@ import { wol } from "@bukhalo/wol";
 wake("00:00:00:00:00:00");
 ```
 
-> [!IMPORTANT] Don't forget to add the `--unstable-net` flag to your startup
-> task:
+<!-- deno-fmt-ignore -->
+> [!IMPORTANT]
+> Don't forget to add the `--unstable-net` flag to your startup task:
 >
-> ```json
+> ```jsonc
 > // deno.json
 > {
 >   "tasks": {
